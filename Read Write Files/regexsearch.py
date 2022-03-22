@@ -3,7 +3,7 @@ import re
 import glob
 import os
 
-# open up all .txt files within /Users/Lucas and children dirs
+# open up all .txt files within /Users/Lucas
 findDir = Path('/Users/Lucas/')
 
 searchedWord = input('\nEnter the word that you wish to find: ')
@@ -11,12 +11,12 @@ searchedWord = input('\nEnter the word that you wish to find: ')
 # loop through the generator that glob returns
 for txtFiles in findDir.glob('*.txt'):
 	openFile = open(txtFiles)
-	readRtfFiles = openFile.read()
+	readTxtFiles = openFile.read()
 	fileName = os.path.basename(txtFiles)
 
-	# use an input as a regex expression to find sample
+	# use the input as a regex expression to find sample
 	regex = re.compile(searchedWord)
-	txtRegex = regex.findall(readRtfFiles)
+	txtRegex = regex.findall(readTxtFiles)
 
 	if not txtRegex:
 		pass
