@@ -21,4 +21,4 @@ for column in zip(*grid):
     print(''.join(column))
 
 # 3rd version of printing the grid
- print('\n'.join(map(''.join, zip(*grid))))
+print('\n'.join(map(''.join, zip(*grid))))

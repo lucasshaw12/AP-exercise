@@ -7,15 +7,19 @@ print('Please select which option as you go through the menu. Enter the word or 
 
 bread_type = pyip.inputMenu(['white', 'wheat', 'sourdough'], numbered=True)  
 protein_type = pyip.inputMenu(['Chicken', 'Turkey', 'Ham', 'Tofu'], numbered=True) 
-cheese_yn = pyip.inputYesNo(prompt='Would you like cheese with that?')
+cheese_yn = pyip.inputYesNo(prompt='Would you like cheese with that? Yes/No: ')
 
 if cheese_yn == 'yes':
 	cheese_type = pyip.inputMenu(['Cheddar', 'Swiss', 'Mozzarella'], numbered=True)
+else:
+	cheese_type = ''
 
-topping_yn = pyip.inputYesNo(prompt='Would you like to choose 1 extra topping?')
+topping_yn = pyip.inputYesNo(prompt='Would you like to choose 1 extra topping? Yes/No: ')
 
 if topping_yn == 'yes':
-	topping_type = pyip.inputMenu([r'Mayo', 'Mustard', 'Lettuce', 'Tomato'], numbered=True)
+	topping_type = pyip.inputMenu(['Mayo', 'Mustard', 'Lettuce', 'Tomato'], numbered=True)
+else:
+	topping_type = ''
 
 amount_of_sandwiches = pyip.inputInt(prompt='How many sandwiches would you like? ')
 

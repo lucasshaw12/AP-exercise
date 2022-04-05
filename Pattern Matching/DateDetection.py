@@ -44,9 +44,9 @@ if month == '01' or month == '03' or month == '05' or month == '07' or month == 
 	if day > '31':
 		print('This month only has 31 days, this day is invalid')
 
-# Check whether that year is a leap year
-if int(year) % 4 == 0 or int(year) % 100 == 0 or int(year) % 400 == 0:
-	print(f'{year} is a leap year')
-else:
-	print(f'{year} is not a leap year')
+# # Check whether that year is a leap year
+# if int(year) % 4 == 0 or int(year) % 100 == 0 or int(year) % 400 == 0:
+# 	print(f'{year} is a leap year')
+# else:
+# 	print(f'{year} is not a leap year')
 

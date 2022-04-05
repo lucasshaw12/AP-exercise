@@ -3,6 +3,8 @@ import re
 import glob
 import os
 
+# Search for a string of text within all .txt files. Return the files and strings which contain that text
+
 # open up all .txt files within /Users/Lucas
 findDir = Path('/Users/Lucas/')
 
