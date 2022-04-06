@@ -3,7 +3,6 @@
 
 import webbrowser, sys, pyperclip, time
 from selenium import webdriver
-from selenium.webdriver.common.by import By
 import chromedriver_binary
 from selenium.webdriver.common.keys import Keys
 from webdriver_manager.firefox import GeckoDriverManager
