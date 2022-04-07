@@ -33,6 +33,7 @@ $RECYCLE.BIN/
 
 # Txt Files
 *.txt
+*.log
 
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
