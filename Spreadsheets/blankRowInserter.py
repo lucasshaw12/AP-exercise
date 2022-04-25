@@ -12,7 +12,6 @@ if len(sys.argv) > 2:
 	blankRows = int(sys.argv[2]) 
 if len(sys.argv) > 3:
 	newFilename = sys.argv[3]
-	print(newFilename)
 
 # TO DO
 # Create a xlsx file and populate with test text
