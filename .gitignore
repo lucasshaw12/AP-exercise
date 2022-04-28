@@ -35,6 +35,10 @@ $RECYCLE.BIN/
 *.txt
 *.log
 
+# Google API credentials
+token.json
+credentials.json
+
 # xlsx files
 *.xlsx
 
