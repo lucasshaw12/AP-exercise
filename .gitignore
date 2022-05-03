@@ -37,7 +37,11 @@ $RECYCLE.BIN/
 
 # Google API credentials
 token.json
-credentials.json
+Google API key.rtf
+credentials-sheets.json
+quickstart.py
+token-drive.pickle
+token-sheets.pickle
 
 # xlsx files
 *.xlsx
