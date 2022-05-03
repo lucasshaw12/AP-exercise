@@ -4,7 +4,7 @@
 
 import ezsheets
 # Access the spreadsheet
-ss = ezsheets.Spreadsheet('1ynkLoQAxZDn3kkKu5PK4rpJ5UgAK5Cpzg9Z8o6a1bgY')
+ss = ezsheets.Spreadsheet('Python test responses')
 sheet = ss[0]
 columns = sheet.getColumn(2)
 rows = sheet.getRows()
