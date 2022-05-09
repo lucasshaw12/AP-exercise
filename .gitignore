@@ -45,6 +45,17 @@ token-sheets.pickle
 
 # xlsx files
 *.xlsx
+*.xlsx#
+
+# .docx files
+*.docx
+
+# image files
+*.png
+*.jpg
+
+# PDF files
+*.pdf
 
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
