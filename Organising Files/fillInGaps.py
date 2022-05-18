@@ -1,7 +1,38 @@
+#! python3
+# Find all filenames with a specified extention. If the sequence has gaps, fill them in with new files.
+# e.g. # Locate any gaps in the numbering such as (Txt2.txt and Txt0.txt - but no Txt1.txt) 
+import os, re, shutil
+from pathlib import Path
+
+# Create a folder 
+os.makedirs('Txt Files', exist_ok=True)
+absWorkingDir = os.path.abspath('.') 
+
+# Populate folder with .txt files, deliberately skipping every other filename number (0, 2, 4, 6, 8)
+for newFile in range(0, 10, 2): 
+	newFile = open(f'{absWorkingDir}/Txt Files/Txt{newFile}.txt', 'w')
+
 # Find all files in a single folder with a given prefix of .txt
+txtFolder = Path(f'{absWorkingDir}/Txt Files/')
+fileNumber = 1
+for txtFile in os.listdir(txtFolder):
+	if txtFile.endswith('.txt'):
 
-# Locate any gaps in the numbering such as (spam001.txt and spam003.txt but no spam002.txt)
+		# Create a regular expression to find the files
+		fileNamePattern = re.compile(r'(^Txt)(\d+)')
+		mo = fileNamePattern.search(txtFile)
 
-# rename all later files to fill this gap
+		newFilename = 'new' + mo.group(1) + str(fileNumber) + '.txt'
+		fileNumber += 1
 
-# Write another program thst can insert gaps into numbered files so that a new file can be added
+		cwd = os.path.abspath(txtFolder)
+		oldPath = os.path.join(cwd, txtFile)
+		newPath = os.path.join(cwd, newFilename)
+		print(oldPath)
+		print(newPath)
+		
+		shutil.move(oldPath, newPath)
+
+
+
+
