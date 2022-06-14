@@ -31,6 +31,9 @@ $RECYCLE.BIN/
 # Thumbnails
 ._*
 
+# CUSTOM MADE - PREVENTS UNNEEDED FILES BEING COMMITTED/PUSHED
+# =========================
+
 # Txt Files
 *.txt
 *.log
@@ -56,6 +59,9 @@ token-sheets.pickle
 
 # PDF files
 *.pdf
+
+# END OF CUSTOM SECTION
+# =========================
 
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
